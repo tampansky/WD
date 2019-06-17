@@ -131,11 +131,9 @@ case $lol in
  echo -e "NOTE : FILE HARUS BERNAMA INDEX.html"
  read -p $nc "[FIle} :" file #membaca file
  echo ""
- clear
  echo -e "NOTE : Silahkan Masukan Target"
  read -p "[Target} :" target #membaca target
  echo ""
-clear 
  load 
  curl -T /storage/emulated/0/$file $target
  ;;
