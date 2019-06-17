@@ -129,8 +129,9 @@ case $lol in
  Banner
  echo -e "NOTE : TARUH FILE DEFACE KALIAN DI LUAR FOLDER"
  echo -e "NOTE : FILE HARUS BERNAMA INDEX.html"
- read -p $nc "[FIle} :" file #membaca file
+ read -p "[FIle} :" file #membaca file
  echo ""
+ echo -e "menggabungkan $file"
  echo -e "NOTE : Silahkan Masukan Target"
  read -p "[Target} :" target #membaca target
  echo ""
