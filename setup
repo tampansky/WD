@@ -119,8 +119,9 @@ echo -e $blue "     [Pilih Menu.]"
 echo -e $okegreen "[1.WebDav] | [2.WeBvuln]"
 echo -e $red "   [3.Exit]"
 echo -e "_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_" | lolcat
-read "root@./tampansky:~#" Pilih
-case $Pilih in
+echo -n -e "$yellow root$white@$lightgreen/webdav$white:$red~$cyan # $nc"
+read -e lol
+case $lol in
 ("1")
  load
  clear
@@ -128,11 +129,11 @@ case $Pilih in
  Banner
  echo -e "NOTE : TARUH FILE DEFACE KALIAN DI LUAR FOLDER"
  echo -e "NOTE : FILE HARUS BERNAMA INDEX.html"
- read $nc "[FIle} :" file #membaca file
+ read -p $nc "[FIle} :" file #membaca file
  echo ""
  clear
  echo -e "NOTE : Silahkan Masukan Target"
- read "[Target} :" target #membaca target
+ read -p "[Target} :" target #membaca target
  echo ""
 clear 
  load 
