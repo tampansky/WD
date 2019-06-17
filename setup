@@ -115,9 +115,9 @@ echo -e $red "_____ $blue _____ $red _____ $blue _____"
 sleep 0.25
 echo ""
 echo -e "_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_" | lolcat
-echo -e $blue "     [Pilih Menu.]"
+echo -e $blue "      [Pilih Menu.]"
 echo -e $okegreen "[1.WebDav] | [2.WeBvuln]"
-echo -e $red "   [3.Exit]"
+echo -e $red "         [3.Exit]"
 echo -e "_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_" | lolcat
 echo -n -e "$yellow root$white@$lightgreen/webdav$white:$red~$cyan # $nc"
 read -e lol
@@ -128,11 +128,11 @@ case $lol in
  sleep 1
  Banner
  echo -e "NOTE : TARUH FILE DEFACE KALIAN DI LUAR FOLDER"
- echo -e "NOTE : FILE HARUS BERNAMA INDEX.html"
+ echo -e "NOTE : FILE HARUS BERNAMA index.html"
  read -p "[FIle} :" file #membaca file
  echo ""
- echo -e "menggabungkan $file"
- echo -e "NOTE : Silahkan Masukan Target"
+ echo -e $blue "menggabungkan $cyan $file"
+ echo -e $red "NOTE : Silahkan Masukan Target"
  read -p "[Target} :" target #membaca target
  echo ""
  load 
@@ -176,47 +176,55 @@ echo -e $red " / _ \ \/ / | __|"
 echo -e $red "|  __/>  <| | |_ "
 echo -e $red " \___/_/\_\_|\__|"
 sleep 0.25
+clear
 echo -e $blue "           _ _   "
 echo -e $blue "  _____  _(_) |_ "
 echo -e $blue " / _ \ \/ / | __|"
 echo -e $blue "|  __/>  <| | |_ "
 echo -e $blue " \___/_/\_\_|\__|"  
 sleep 0.25       
+clear
 echo -e $red "           _ _   "
 echo -e $red "  _____  _(_) |_ "
 echo -e $red " / _ \ \/ / | __|"
 echo -e $red "|  __/>  <| | |_ "
 echo -e $red " \___/_/\_\_|\__|"
 sleep 0.25
+clear
 echo -e $blue "           _ _   "
 echo -e $blue "  _____  _(_) |_ "
 echo -e $blue " / _ \ \/ / | __|"
 echo -e $blue "|  __/>  <| | |_ "
-echo -e $blue " \___/_/\_\_|\__|"  
+echo -e $blue " \___/_/\_\_|\__|" 
 sleep 0.25       
+clear
 echo -e $red "           _ _   "
 echo -e $red "  _____  _(_) |_ "
 echo -e $red " / _ \ \/ / | __|"
 echo -e $red "|  __/>  <| | |_ "
 echo -e $red " \___/_/\_\_|\__|"
 sleep 0.25
+clear
 echo -e $blue "           _ _   "
 echo -e $blue "  _____  _(_) |_ "
 echo -e $blue " / _ \ \/ / | __|"
 echo -e $blue "|  __/>  <| | |_ "
-echo -e $blue " \___/_/\_\_|\__|"  
+echo -e $blue " \___/_/\_\_|\__|" 
 sleep 0.25       
+clear
 echo -e $red "           _ _   "
 echo -e $red "  _____  _(_) |_ "
 echo -e $red " / _ \ \/ / | __|"
 echo -e $red "|  __/>  <| | |_ "
 echo -e $red " \___/_/\_\_|\__|"
 sleep 0.25
+clear
 echo -e $blue "           _ _   "
 echo -e $blue "  _____  _(_) |_ "
 echo -e $blue " / _ \ \/ / | __|"
 echo -e $blue "|  __/>  <| | |_ "
 echo -e $blue " \___/_/\_\_|\__|"  
 sleep 0.25       
+clear
 ;;
 esac
