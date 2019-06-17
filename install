@@ -37,11 +37,11 @@ sleep 0.25
 clear       
 }
 baner
-pkg update -y
-pkg upgrade -y
-pkg install ruby -y
+pkg update 
+pkg upgrade 
+pkg install ruby 
 gem install lolcat 
-pkg install toilet -y
-pkg install figlet -y
-pkg install curl -y
-esac
+pkg install toilet 
+pkg install figlet 
+pkg install curl 
+bash setup
