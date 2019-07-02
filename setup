@@ -99,7 +99,7 @@ load
 clear
 sleep 0.25
 echo ""
-echo -e $red "_____ $blue _____ $red _____ $blue _____"
+echo -e $red "-_____-$blue-_____-$red-_____-$blue-_____-"
 sleep 0.25
 echo -e $lightgreen "Author : $lightcyan HadiPrasetia"
 sleep 0.25
@@ -111,13 +111,14 @@ echo -e $red "Thanks To $blue Suport Me "
 sleep 0.25
 echo -e $lightgreen "Tools WebDav Terbaru."
 sleep 0.25
-echo -e $red "_____ $blue _____ $red _____ $blue _____"
+echo -e $red "-_____-$blue-_____-$red-_____-$blue-_____-"
 sleep 0.25
 echo ""
 echo -e "_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_" | lolcat
-echo -e $blue "      [Pilih Menu.]"
-echo -e $okegreen "[1.WebDav] | [2.WeBvuln]"
-echo -e $red "         [3.Exit]"
+echo -e $blue"     [Pilih Menu.]  "
+echo -e $okegreen"[1.WebDav] | [2.WeBvuln]"
+echo -e $blue"  [3.Nyuri SC Deface.]  "
+echo -e $red"  [0.Exit]"
 echo -e "_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_" | lolcat
 echo -n -e "$yellow root$white@$lightgreen/webdav$white:$red~$cyan # $nc"
 read -e lol
@@ -168,6 +169,20 @@ echo -e $blue "[http://itsengineering.co.za]"
 sleep 0.25
 ;;
 ("3")
+ load
+ clear
+ sleep 1
+pkg install wget
+clear 
+sleep 1
+echo -e $cyan"MASSUKAN URL SCRIPT"
+read -p "[MASUKAN}:" url #membaca url
+echo 
+wget $url
+load
+ls
+;;
+("4")
 load 
 sleep 2
 echo -e $red "           _ _   "
