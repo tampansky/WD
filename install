@@ -38,10 +38,19 @@ clear
 }
 baner
 pkg update 
+echo -e $cyan "[!]Membuka penyimpanan[!]"
+termux-setup-storage
 pkg upgrade 
+clear
+echo -e $cyan "[!]Menginstall Ruby[!]"
 pkg install ruby 
+sleep 1
+clear
+echo -e $cyan "[!]Menginstall lolcat[!]"
 gem install lolcat 
-pkg install toilet 
-pkg install figlet 
+clear
+sleep 1
+echo -e $cyan "[!]Menginstall CURL[!]"
 pkg install curl 
+baner
 bash setup
